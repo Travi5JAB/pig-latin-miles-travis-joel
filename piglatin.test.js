@@ -1,8 +1,19 @@
 console.log("connected");
-var ogString = 'squeal'
+var ogString = 'hello'
 var lower = ogString.toLowerCase()
 var ay = 'ay'
 var way = 'way'
+
+///////////////////////////////////////////////////////////////////////
+//test area
+// describe ("pigLatin",()=>{
+//     test("return words with pig latin translation depending on letters in word",()=>{
+//         expect(pigLatin("equals")).toBe("equalsway")
+//         expect(pigLatin("tribute")).toBe("ibutetray")
+//         expect(pigLatin("squirrel")).toBe("irrelsquay")
+//     })
+// })
+////////////////////////////////////////////////////////////////////
 
 function pigLatin(string) {
 
@@ -12,7 +23,7 @@ function pigLatin(string) {
 
  } else if (string.charAt(1) === "q" && string.charAt(2) === "u") {
 
-   var newArr = lower.split('')
+   var newArr = string.split('')
    var firstLetter = newArr.shift()
    var secondLetter = newArr.shift()
    var thirdLetter = newArr.shift()
@@ -73,4 +84,10 @@ function buttonPress(){
     document.getElementById("output").innerHTML = pigLatin(Text1)
 }
 
-// console.log(pigLatin(lower))
+var rules = "PIG LATIN RULES:\n* For words beginning with a vowel, add 'way' to the end.\n\n* For words beginning with one or more consonants, move all of the first consecutive consonants to the end, and add 'ay'. \n\n* For words beginning with 'y', treat 'y' as a consonant.\n\n* If first consonants include 'qu', move the 'u' along with the 'q'. \n\n * Don't forget about words like 'squeal' where 'qu' doesn't come first! "
+
+function dispRules(){
+    alert(rules)
+}
+
+// console.log(pigLatin("squirrel"))

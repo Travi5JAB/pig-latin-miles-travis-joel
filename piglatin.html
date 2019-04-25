@@ -3,20 +3,24 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="piglatin.css">
-        <title></title>
+        <title>Pig Latin</title>
     </head>
+<form>
     <body>
         <h1>Pig Latin Translator</h1>
-        <div>
+        <img src="https://media.giphy.com/media/l378j4voE4ao73Zlu/giphy.gif" width=alt="">
+
+        <div id="inputArea">
         <input type="text" id ="Text1" name="enterWord" value="Please Enter A Word" onfocus="this.value=''">
 
-            <button type="submit" name="button" onClick="buttonPress()">Translate</button>
+            <button id = "tranBtn" type="button" name="button" onClick="buttonPress()">Translate</button>
         </div>
-
-            <h4 id = "output">Your Word here</h4>
-
-
+        <div id ="divOut">
+            <h4 id = "output">Your Translation </h4>
+        </div>
+        <button type="button" name="button" onclick="dispRules()">Rules</button>
         <script type="text/javascript" src= "piglatin.test.js">
         </script>
     </body>
+</form>
 </html>

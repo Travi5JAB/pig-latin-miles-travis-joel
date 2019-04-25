@@ -1,6 +1,57 @@
 body{
     text-align: center;
 }
+@keyframes example {
+  0% {background-color: pink;}
+  50% {background-color: white;}
+  100% {background-color: pink;}
+
+}
 button{
     cursor: pointer;
+    background-color: pink;
+    border-radius: 15px;
+    width: 60px;
+     height: 18px;
+     position: relative;
+     animation-name: example;
+     animation-duration: 4s;
+     animation-iteration-count: infinite;
+}
+#tranBtn{
+    width: 75px;
+     height: 18px;
+}
+
+h4{
+    color: red;
+    font-size: 20px;
+}
+body{
+border-width: 10px;
+border-style: double;
+border-color: grey;
+padding: 30px;
+background-color: #f2f2f2;
+margin:50px;
+
+}
+
+html{
+background-color: white;
+}
+h1{
+    color: pink;
+}
+
+#inputArea{
+    padding: 20px;
+}
+#divOut{
+    text-align: center;
+    width:200px;
+    height:75px;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
 }
